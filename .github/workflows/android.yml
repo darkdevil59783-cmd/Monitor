@@ -23,7 +23,7 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x monitor/gradlew
     - name: Build with Gradle
-      run: cd monitor && ./gradlew assembleDebug
+      run: cd monitor && ./gradlew assembleDebug --stacktrace
       
     - name: Upload APK
       uses: actions/upload-artifact@v4
